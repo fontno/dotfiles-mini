@@ -1,0 +1,68 @@
+let mapleader = ";"
+
+inoremap jk <esc>
+
+"number of lines to move
+noremap qj <esc>100j
+noremap qk <esc>100k
+"noremap wj <esc>75j
+"noremap wk <esc>75k
+"noremap ej <esc>50j
+"noremap ek <esc>50k
+"noremap rj <esc>25j
+"noremap rk <esc>25k
+
+" page up down
+nnoremap ;dd <C-d> 
+nnoremap ;ff <C-f> 
+
+nnoremap ;d <C-b> 
+nnoremap ;f <C-f> 
+
+" move editor focus
+nnoremap ;h <C-w>h 
+nnoremap ;j <C-w>j 
+nnoremap ;k <C-w>k 
+nnoremap ;l <C-w>l 
+
+nnoremap :fj <C+D-UP>
+"" next editor 
+"nnoremap ;w <C-w>w 
+"" previous editor
+"nnoremap ;e <C-w>W 
+
+" new assistant
+nnoremap ;n <C-w>n 
+" delete assistant
+nnoremap ;q <C-w>q 
+" new vertical assistant
+nnoremap ;av <C-w>v 
+" new horizontal assistant
+nnoremap ;ah <C-w>s 
+
+" insert newline above or below and stay in current position with shift enter or enter
+nnoremap <S-Enter> O<Esc>j
+nnoremap <CR> o<Esc>k
+
+" comment uncomment
+vnoremap ;cc <D-/>
+nnoremap ;cc <D-/>
+
+" Save my pinky
+inoremap ;j _
+inoremap ;k "
+inoremap ;l "
+nnoremap ;a :
+inoremap ;a :
+inoremap ;s (
+inoremap ;d )
+inoremap ;w {
+inoremap ;e }
+inoremap ;f *
+
+" insert mode delete from cursor to begining letter
+inoremap ;b <C-u>
+" dinsert mode elete previous letter
+inoremap ;h <C-h>
+" insert mode delete previous word
+inoremap ;g <C-w>
